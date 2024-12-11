@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div class="card mx-auto" style="max-width: 600px;">
+    <div class="card-header bg-primary text-white">
+        <h4>Agregar Producto</h4>
+    </div>
+    <div class="card-body">
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <div class="mb-3">
+                {{ formulario.nombre.label_tag }}
+                {{ formulario.nombre }}
+            </div>
+            <div class="mb-3">
+                {{ formulario.descripcion.label_tag }}
+                {{ formulario.descripcion }}
+            </div>
+            <div class="mb-3">
+                {{ formulario.precio.label_tag }}
+                {{ formulario.precio }}
+            </div>
+            <div class="mb-3">
+                {{ formulario.stock.label_tag }}
+                {{ formulario.stock }}
+            </div>
+            <button type="submit" class="btn btn-success w-100">Guardar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

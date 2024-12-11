@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a la Tienda de Computación</h1>
+    <a href="{% url 'buscar_producto' %}" class="btn btn-primary btn-lg mt-4">Explorar Productos</a>
+    <div class="mt-5">
+        <p class="lead">
+            Encuentra todo lo que necesitas para tu PC, con la mejor calidad y al mejor precio.
+        </p>
+    </div>
+</div>
+{% endblock %}
+
+
+

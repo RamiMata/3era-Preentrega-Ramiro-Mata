@@ -1,0 +1,126 @@
+/* styles.css */
+
+/* General */
+
+body {
+    background-image: url("../images/background.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; 
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #dcdcdc !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Card */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Forms */
+form input, form textarea, form select {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+form button {
+    border-radius: 5px;
+}
+
+/* List Groups */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.badge {
+    font-size: 0.9rem;
+}
+
+/* Estilo específico para el título principal */
+h1.display-4 {
+    color: #ffffff !important; /* Blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para destacar */
+}
+
+/* Estilo específico para el texto de aclaración */
+p.lead {
+    color: #ffffff !important; /* Blanco */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: #343a40;
+}
+
+p {
+    color: #ffffff;
+}
+
+/* Custom Container */
+.container {
+    margin-top: 20px;
+    max-width: 900px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div class="card mx-auto" style="max-width: 600px;">
+    <div class="card-header bg-primary text-white">
+        <h4>Registrar Venta</h4>
+    </div>
+    <div class="card-body">
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <div class="mb-3">
+                {{ formulario.cliente.label_tag }}
+                {{ formulario.cliente }}
+            </div>
+            <div class="mb-3">
+                {{ formulario.producto.label_tag }}
+                {{ formulario.producto }}
+            </div>
+            <div class="mb-3">
+                {{ formulario.cantidad.label_tag }}
+                {{ formulario.cantidad }}
+            </div>
+            <button type="submit" class="btn btn-success w-100">Registrar Venta</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
