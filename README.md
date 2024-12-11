@@ -7,3 +7,7 @@ http://127.0.0.1:8000/tienda/agregar/producto/: en esta parte se puede agregar u
 http://127.0.0.1:8000/tienda/buscar/producto/: se puede buscar cualquier producto de la BD.
 http://127.0.0.1:8000/tienda/agregar/cliente/: en esta parte se puede agregar un cliente añadiendo el nombre,correo y dirección.
 http://127.0.0.1:8000/tienda/agregar/venta/: En registrar venta toma los datos para seleccionar de los clientes y de los productos, dejando para elegir la cantidad de productos que se llevó el cliente.
+
+El sueperusuario es 
+Username: RamiroAdmin
+Password: moto250
